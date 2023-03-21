@@ -1,0 +1,13 @@
+body {
+  background: #F2F2F2; }
+
+.property-header {
+  padding-top: 13.6rem;
+  background: linear-gradient(225.52deg, #271A00 0.45%, rgba(0, 0, 0, 0.982162) 100.47%);
+  color: white; }
+  .property-header__inner {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); }
+
+/*# sourceMappingURL=property.css.map */

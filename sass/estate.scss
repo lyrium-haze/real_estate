@@ -1,0 +1,118 @@
+@import 'variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+body {
+    background: #F2F2F2;
+}
+.estate-header {
+    padding-top: 13.6rem;
+    background: $bg-dark;
+    color: white;
+    &__inner {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+.estate-wrapper {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2.3rem;
+    margin-top: 6rem;
+}
+.estate-main {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+}
+#largeImg {
+    margin: auto;
+    width: 550px;
+    height: 400px;
+    padding: 5px;
+  }
+  #thumbs {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+  .gl img {
+    width: 100px;
+    height: 100px;
+    padding: 4px;
+    margin: 4px;
+  }
+  
+  #thumbs li {
+    list-style: none;
+  }
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.603);
+}
+.estate-similar {
+    width: 90vw;
+    overflow-x: hidden;
+    &__cards {
+        display: flex;
+        column-gap: 2%;
+    }
+    .card
+    {
+        //width: 45vw;
+        flex-shrink: 0;
+    }
+}
+.aside-form {
+    flex-basis: 20%;
+}
+.form {
+        display: flex;
+        flex-direction: column;
+        width: 33.6rem;
+        &__wrapper {
+            padding: 2rem;
+            background: white;
+            border-radius: 25px;
+            box-shadow: 0px 32px 34px rgba(0, 0, 0, .133714);
+        }
+        input {
+            height: 6rem;
+        }
+        .message {
+            min-height: 10rem;
+        }
+        &__field {
+            color: black;
+            background-color: #fff;
+            border: 1px solid #EBEBEB;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-top: 1rem;
+            &::placeholder {
+                color: black;
+                opacity: 1;
+            }
+
+        }
+}
+.user {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    font-family: "DM Sans", sans-serif;
+    &__pic {
+        margin-left: 1.7rem;
+    }
+}
+.client__status {
+color: #FFAC12;
+}
+.details{
+    &__params-item {
+        padding: 3rem;
+    }
+}

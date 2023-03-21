@@ -1,0 +1,60 @@
+@import 'breakpoints.scss';
+.menu-burger {
+    display: none;
+    @include sm {
+        display: block;
+        position: fixed;
+        right: 2%;
+        width: 40px;
+        height: 25px;
+    }
+& span, &:after, &:before{
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background: white;
+    margin: 0 auto;
+    transition: all .3s ease;
+}
+& span {
+    top: 44%;
+}
+&:after {
+    bottom: 0;
+}
+&:after, &:before{
+    content: '';
+}
+&_active {
+   & span {
+        transform: rotate(45deg);
+   }
+    &::before {
+        display: none;
+      }
+     &::after {
+        top: 44%;
+        transform: rotate(-45deg);
+      }
+}
+}
+.menu__list-burger {
+    display: none;
+    @include sm {
+        position: fixed;
+        z-index: 5;
+        top: 68px;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgba(59, 47, 47, 0.644);
+        font-weight: 900;
+        font-size: 2.1rem;
+        list-style-type: none;
+    }
+
+}
