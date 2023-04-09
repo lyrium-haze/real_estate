@@ -55,6 +55,16 @@ function showThumbnail(src, alt) {
         menu.classList.toggle("menu__list-burger");
     }
     burger.addEventListener('click', showMenu);
+
+
+    const swiperIntro = new Swiper('.list__swiper-container', {
+      slidesPerView: 3,
+  spaceBetween: 10,
+      loop: true,
+  /*     autoplay: {
+        delay: 7000,
+      }, */
+  });
 }
 
 document.addEventListener("DOMContentLoaded", WhenLoaded);

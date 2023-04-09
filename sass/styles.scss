@@ -265,7 +265,7 @@ body {
     box-shadow: 0px 32px 34px rgba(0, 0, 0, .133714);
     overflow: hidden;
     transition: all .3s ease-in-out;
-    &:hover {
+    &_hover:hover {
         padding: 5%;
         box-shadow: 0px 32px 34px rgba(0, 0, 0, .5);
       }

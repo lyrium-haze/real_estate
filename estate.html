@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <title> Modern House </title>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -88,7 +90,7 @@
                     </ul>
                 </section>
                 <section class="estate-details">
-                    <div class="details">
+                    <div class="details card">
                         <div class="details__title">
                             <h3 class="section-title">Details</h3>
                         </div>
@@ -127,7 +129,7 @@
                         </div>
                 </section>
                 <section class="estate-description">
-                    <div class="details">
+                    <div class="details card">
                         <div class="details__title">
                             <h3 class="section-title">Description</h3>
                         </div>
@@ -149,7 +151,7 @@
                     </div>
                 </section>
                 <section class="estate-features">
-                    <div class="details">
+                    <div class="details card">
                         <div class="details__title">
                             <h3 class="section-title">Features</h3>
                         </div>
@@ -255,8 +257,9 @@
                         <span class="gradient-line"></span>
                         <h2 class="info-title">Similar listings</h2>
                     </div>
-                    <div class="estate-similar__cards">
-                        <a class="card" href="estate.html">
+                    <div class="swiper-container list__swiper-container">
+                    <div class="swiper-wrapper estate-similar__cards">
+                        <a class="card swiper-slide" href="estate.html">
                             <img class="card__item" src="img/House Example 1.png" alt="house-1">
                             <div class="details card__item">
                                 <p class="details__title ">
@@ -284,7 +287,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a class="card" href="estate.html">
+                        <a class="card swiper-slide" href="estate.html">
                             <img class="card__item" src="img/House Example 2.png" alt="house-2">
                             <div class="details card__item">
                                 <p class="details__title ">
@@ -312,7 +315,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a class="card" href="estate.html">
+                        <a class="card swiper-slide" href="estate.html">
                             <img class="card__item" src="img/House Example 3.png" alt="house-3">
                             <div class="details card__item">
                                 <p class="details__title ">
@@ -340,7 +343,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a class="card" href="estate.html">
+                        <a class="card swiper-slide" href="estate.html">
                             <img class="card__item" src="img/House Example 4.png" alt="house-4">
                             <div class="details card__item">
                                 <p class="details__title">
@@ -368,7 +371,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a class="card" href="estate.html">
+                        <a class="card swiper-slide" href="estate.html">
                             <img class="card__item" src="img/House Example 5.png" alt="house-5">
                             <div class="details card__item">
                                 <p class="details__title ">
@@ -396,7 +399,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a class="card" href="estate.html">
+                        <a class="card swiper-slide" href="estate.html">
                             <img class="card__item" src="img/House Example 6.png" alt="house-6">
                             <div class="details card__item">
                                 <p class="details__title ">
@@ -424,6 +427,7 @@
                                 </div>
                             </div>
                         </a>
+                        </div>
                     </div>
                 </section>
             </main>
