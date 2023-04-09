@@ -18,12 +18,21 @@ body {
     justify-content: space-between;
     column-gap: 2.3rem;
     margin-top: 6rem;
+    @include md {
+        flex-direction: column;
+    }
 }
 .estate-main {
     width: 50%;
     display: flex;
     flex-direction: column;
     row-gap: 4rem;
+    @include md {
+        width: 100%;
+    }
+}
+.estate-gallery {
+    text-align: center;
 }
 #largeImg {
     margin: auto;
@@ -69,7 +78,10 @@ body {
 }
 .aside-form {
     flex-basis: 20%;
-}
+    &__inner {
+        margin: 0 auto;
+    }
+    }
 .form {
         display: flex;
         flex-direction: column;

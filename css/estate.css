@@ -1,103 +1,76 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
-body {
-  background: #F2F2F2; }
+/*
+Error: Undefined mixin 'md'.
+        on line 21 of sass/estate.scss, in `md'
+        from line 21 of sass/estate.scss
 
-.estate-header {
-  padding-top: 13.6rem;
-  background: linear-gradient(225.52deg, #271A00 0.45%, rgba(0, 0, 0, 0.982162) 100.47%);
-  color: white; }
-  .estate-header__inner {
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid rgba(255, 255, 255, 0.1); }
+16: .estate-wrapper {
+17:     display: flex;
+18:     justify-content: space-between;
+19:     column-gap: 2.3rem;
+20:     margin-top: 6rem;
+21:     @include md {
+22:         flex-direction: column;
+23:     }
+24: }
+25: .estate-main {
+26:     width: 50%;
 
-.estate-wrapper {
-  display: flex;
-  justify-content: space-between;
-  column-gap: 2.3rem;
-  margin-top: 6rem; }
-
-.estate-main {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  row-gap: 4rem; }
-
-#largeImg {
-  margin: auto;
-  width: 550px;
-  height: 400px;
-  padding: 5px; }
-
-#thumbs {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  justify-content: center; }
-
-.gl img {
-  width: 100px;
-  height: 100px;
-  padding: 4px;
-  margin: 4px; }
-
-#thumbs li {
-  list-style: none; }
-
-.features {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  font-weight: 100;
-  color: rgba(0, 0, 0, 0.603); }
-
-.estate-similar {
-  width: 90vw;
-  overflow-x: hidden; }
-  .estate-similar__cards {
-    display: flex;
-    column-gap: 2%; }
-  .estate-similar .card {
-    flex-shrink: 0; }
-
-.aside-form {
-  flex-basis: 20%; }
-
-.form {
-  display: flex;
-  flex-direction: column;
-  width: 33.6rem; }
-  .form__wrapper {
-    padding: 2rem;
-    background: white;
-    border-radius: 25px;
-    box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.133714); }
-  .form input {
-    height: 6rem; }
-  .form .message {
-    min-height: 10rem; }
-  .form__field {
-    color: black;
-    background-color: #fff;
-    border: 1px solid #EBEBEB;
-    border-radius: 10px;
-    padding: 2rem;
-    margin-top: 1rem; }
-    .form__field::placeholder {
-      color: black;
-      opacity: 1; }
-
-.user {
-  background-color: #F5F5F5;
-  border-radius: 10px;
-  font-family: "DM Sans", sans-serif; }
-  .user__pic {
-    margin-left: 1.7rem; }
-
-.client__status {
-  color: #FFAC12; }
-
-.details__params-item {
-  padding: 3rem; }
-
-/*# sourceMappingURL=estate.css.map */
+Backtrace:
+sass/estate.scss:21:in `md'
+sass/estate.scss:21
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:98:in `block in with_mixin'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:98:in `with_mixin'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'md'.\A         on line 21 of sass/estate.scss, in `md'\A         from line 21 of sass/estate.scss\A \A 16: .estate-wrapper {\A 17:     display: flex;\A 18:     justify-content: space-between;\A 19:     column-gap: 2.3rem;\A 20:     margin-top: 6rem;\A 21:     @include md {\A 22:         flex-direction: column;\A 23:     }\A 24: }\A 25: .estate-main {\A 26:     width: 50%;"; }
