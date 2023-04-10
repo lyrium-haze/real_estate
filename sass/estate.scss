@@ -78,6 +78,11 @@ body {
 }
 .aside-form {
     flex-basis: 20%;
+    &__wrapper {
+        @include md {
+        padding: 5rem 0;
+        }
+    }
     &__inner {
         margin: 0 auto;
     }

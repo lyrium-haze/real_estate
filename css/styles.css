@@ -480,6 +480,9 @@ body {
 
 .aside-form {
   flex-basis: 20%; }
+  @media (max-width: 991px) {
+    .aside-form__wrapper {
+      padding: 5rem 0; } }
   .aside-form__inner {
     margin: 0 auto; }
 

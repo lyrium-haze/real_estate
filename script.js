@@ -58,12 +58,15 @@ function showThumbnail(src, alt) {
 
 
     const swiperIntro = new Swiper('.list__swiper-container', {
-      slidesPerView: 3,
+      slidesPerView: 2,
   spaceBetween: 10,
       loop: true,
-  /*     autoplay: {
-        delay: 7000,
-      }, */
+      breakpoints: {
+        // when window width is >= 320px
+        767: {
+          slidesPerView: 3,
+          spaceBetween: 20
+        },}
   });
 }
 
